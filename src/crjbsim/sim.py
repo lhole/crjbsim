@@ -7,7 +7,7 @@ from crjbsim.discrete_event_scheduler import DiscreteEventScheduler
 scheduler = None
 
 
-def run_sim(initial_event, post_processing=None):
+def run_sim(initial_event, post_processing=None) -> None:
     random.seed(0)
     des_aware_logging.setup()
     time_provider.set_time(0)

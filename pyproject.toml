@@ -1,5 +1,11 @@
 [build-system]
-requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
-[tool.setuptools_scm]
+[tool.poetry]
+name = "crjbsim"
+version = "0.1.0"
+description = ""
+authors = ["Laurence Hole <laurence@greenvertex.dev>"]
+readme = "README.md"
+packages = [{ include = "src" }]
